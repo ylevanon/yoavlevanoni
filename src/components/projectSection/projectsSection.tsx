@@ -5,7 +5,7 @@ const projects = [
   {
     name: "OptiRunGen.com",
     description:
-      "OptiRunGen is a linear programming application that generates globally optimal running routes based on user preferences. I developed a novel linear programming algorithm for this project and published and presented my findings at IEEE conference in Montreal Canada.",
+      "OptiRunGen is a linear programming application that generates globally optimal running routes based on user preferences. I developed a novel linear programming algorithm for this project and published and presented my findings at the IEEE conference in Montreal, Canada.",
     image: "/optirungen.png",
     github: "https://github.com/ylevanon/OptiRunRender",
     link: "https://www.optirungen.com/landing",
