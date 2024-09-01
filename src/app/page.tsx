@@ -1,12 +1,17 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { ThemeProvider } from "next-themes";
+import HeroSection from "@/components/heroSection";
+import ProjectsSection from "@/components/projectSection";
+import AboutSection from "@/components/aboutSection";
+import MissionSection from "@/components/missionSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Navbar />
-      <h1 className="text-4xl font-bold text-center">Hello world!</h1>
-    </main>
+    <div>
+      <HeroSection />
+      <AboutSection />
+      <MissionSection />
+    </div>
   );
 }
