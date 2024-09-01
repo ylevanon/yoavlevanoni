@@ -24,14 +24,13 @@ export default function heroSection() {
           <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
             Hi, I&#39;m Yoav!
           </h1>
-          <p className="text-lg mt-4 mb-6 md:text-2xl">
+          <p className="text-lg mt-4 mb-6 md:text-3xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            for the Capital Group Companies. I'm currently based in Costa Mesa,
-            CA. I'm passionate about technology and love to find solutions to
-            real world problems!
+            based in Costa Mesa, CA. I'm passionate about technology and love to
+            find solutions to real world problems!
           </p>
           <Link
             href="projects"

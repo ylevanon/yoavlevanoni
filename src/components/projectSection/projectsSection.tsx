@@ -1,32 +1,22 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import UpArrow from "@/shared/components/upArrow";
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import ProjectItem from "./projectItem";
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: "OptiRunGen.com",
     description:
       "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+    image: "/optirungen.png",
+    github: "https://github.com/ylevanon/OptiRunRender",
+    link: "https://www.optirungen.com/landing",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
-  },
-  {
-    name: "Kator Family Photos",
+    name: "Trivi.ai",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "Trivi.ai is an iOS application that allows you to create the charades ideas you want to play. You can create and save your own ideas or select from over 150 tailored categories. The app uses AI to generate unique charades cards and accompanying images, ensuring fresh and exciting gameplay every time. More features coming out soon!",
+    image: "/triviai.png",
+    github: "https://github.com/ylevanon/Trivi.ai",
+    link: "https://apps.apple.com/us/app/trivi-ai/id6520386318?platform=iphone",
   },
 ];
 
@@ -40,45 +30,7 @@ const ProjectsSection = () => {
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
-          return (
-            <div key={idx}>
-              <UpArrow offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
-                    <Link href={project.link}>
-                      <Image
-                        src={project.image}
-                        alt=""
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
-                      />
-                    </Link>
-                  </div>
-                  <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </UpArrow>
-            </div>
-          );
+          return <ProjectItem project={project} idx={idx} />;
         })}
       </div>
     </section>
