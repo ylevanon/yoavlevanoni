@@ -29,8 +29,8 @@ export default function heroSection() {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            based in Costa Mesa, CA. I'm passionate about technology and love to
-            find solutions to real world problems!
+            based in Costa Mesa, CA. I&apos;m passionate about technology and
+            love to find solutions to real world problems!
           </p>
           <Link
             href="projects"

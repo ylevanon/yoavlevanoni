@@ -30,7 +30,7 @@ const ProjectsSection = () => {
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
-          return <ProjectItem project={project} idx={idx} />;
+          return <ProjectItem project={project} key={idx} />;
         })}
       </div>
     </section>

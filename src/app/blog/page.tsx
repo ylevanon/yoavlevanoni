@@ -25,7 +25,7 @@ export default async function page() {
   return (
     <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 mt-10 pt-16 sm:py-32 md:pt-46 md:pb-48 md:space-x-4 md:text-left">
       <h1 className="text-center font-bold text-4xl pb-8">
-        Yoav's Blogs
+        Yoav&apos;s Blogs
         <hr className="w-64 h-1 mx-auto my-4 bg-teal-500 border-0 rounded m-b-19"></hr>
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 mt-5 gap-5">
