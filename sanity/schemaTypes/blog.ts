@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export default {
     name: 'blog',
     type: 'document',
@@ -32,13 +30,36 @@ export default {
             title: 'Small Decsription',
             type: 'text',
         },
+        // {
+        //     name: 'content',
+        //     title: 'Content',
+        //     type: 'array',
+        //     of: [
+        //        { type: 'block'}
+        //     ]
+        // }
         {
             name: 'content',
             title: 'Content',
             type: 'array',
             of: [
-               { type: 'block'}
+                { type: 'block' },
+                {
+                    type: 'code',
+                    title: 'Code Block',
+                    options: {
+                        language: 'javascript',
+                        languageAlternatives: [
+                            { title: 'TypeScript', value: 'typescript' },
+                            { title: 'HTML', value: 'html' },
+                            { title: 'CSS', value: 'css' },
+                            { title: 'Python', value: 'python' },
+                            // Add more languages as needed
+                        ],
+                        withFilename: true,
+                    },
+                }
             ]
-        },
+        }
     ]
 }

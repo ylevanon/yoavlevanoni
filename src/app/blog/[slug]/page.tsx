@@ -3,6 +3,7 @@ import { SanityClient, urlFor } from "../../lib/sanity";
 import { BlogPost } from "@/app/lib/interface";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
+import CodeBlock from "@/shared/components/codeBlock";
 
 export const revalidate = 30;
 
@@ -16,6 +17,12 @@ async function getData(slug: string) {
   const data = await SanityClient.fetch(query);
   return data;
 }
+
+const components = {
+  types: {
+    code: CodeBlock,
+  },
+};
 
 export default async function page({ params }: { params: { slug: string } }) {
   const data: BlogPost = await getData(params.slug);
@@ -34,7 +41,7 @@ export default async function page({ params }: { params: { slug: string } }) {
         className={`rounded-lg mt-10 border self-center`}
       />
       <div className=" self-center mt-16 prose prose-xl dark:prose-invert prose-li:marker:bg-teal-500">
-        <PortableText value={data.content} />
+        <PortableText value={data.content} components={components} />
       </div>
     </div>
   );
