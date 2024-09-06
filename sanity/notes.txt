@@ -1,0 +1,2 @@
+to deploy sanity project
+npm run deploy

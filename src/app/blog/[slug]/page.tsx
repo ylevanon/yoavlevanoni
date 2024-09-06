@@ -76,7 +76,7 @@ const components = {
 export default async function page({ params }: { params: { slug: string } }) {
   const data: BlogPost = await getData(params.slug);
   return (
-    <div className="mt-16 md:mt-24 lg:mt-32 px-4  lg:px-6 max-w-4xl mx-auto">
+    <div className="mt-24 lg:mt-32 px-4   lg:px-6 max-w-4xl mx-auto">
       <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl pb-4 md:pb-6">
         {data.title}
       </h1>
