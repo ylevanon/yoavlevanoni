@@ -16,14 +16,14 @@ export default function missionItem({
 }: missionItemProps) {
   return (
     <div className="flex flex-col space-y-10  items-center justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-      <div className="md:mt-2 md:w-4/5 text-center md:text-left">
+      <div className="md:mt-2 md:w-3/5 text-center md:text-left">
         <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
           {header}
         </h1>
-        <p>{text}</p>
+        <p className="text-xl">{text}</p>
         <br />
       </div>
-      <div className="md:mt-2 justify-center md:w-1/3">
+      <div className="md:mt-2 justify-center md:w-1/2">
         <SquareImage
           src={`/${src}`}
           alt={alt}

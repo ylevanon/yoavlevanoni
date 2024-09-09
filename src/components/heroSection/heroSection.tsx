@@ -9,7 +9,7 @@ interface heroSectionProps {
 
 export default function heroSection() {
   return (
-    <section id="home">
+    <section id="home" className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 mt-10 pt-16 sm:py-32 md:pt-48 md:pb-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-1/2 md:w-3/5">
           <RoundedImage
@@ -32,12 +32,21 @@ export default function heroSection() {
             based in Costa Mesa, CA. I&apos;m passionate about technology and
             love to find solutions to real world problems!
           </p>
-          <Link
-            href="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-          >
-            Projects
-          </Link>
+          <div className="space-x-6">
+            <Link
+              href="projects"
+              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            >
+              Projects
+            </Link>
+            <a
+              href="/Yoav_Levanoni_Resume.pdf"
+              download={"/Yoav_Levanoni_Resume.pdf"}
+              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>

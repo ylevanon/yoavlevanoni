@@ -29,9 +29,7 @@ export default function RootLayout({
           storageKey="dashboard-theme"
         >
           <Navbar />
-          <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
-            {children}
-          </main>
+          <main className="mx-auto px-4 sm:px-6 w-full">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

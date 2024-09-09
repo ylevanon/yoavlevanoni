@@ -3,7 +3,7 @@ import MissionItem from "./missionItem";
 
 const MissionSection = () => {
   return (
-    <section id="mission">
+    <section id="mission" className="mx-auto w-4/5">
       <div className="pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center font-bold text-4xl">
           Beyond the Code

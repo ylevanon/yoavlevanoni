@@ -10,7 +10,7 @@ export default function AboutSectionImage({
   alt,
 }: AboutSectionImageProps) {
   return (
-    <div className={`md:mt-2 justify-center md:w-1/3`}>
+    <div className={`flex md:mt-2 w-full justify-center`}>
       <SquareImage
         src={`/${src}`}
         alt={alt}

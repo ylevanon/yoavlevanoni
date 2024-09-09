@@ -22,7 +22,7 @@ export default function RoundedImage({
       alt={alt}
       width={width}
       height={height}
-      className="rounded-full object-cover"
+      className="rounded-full object-cover items-center"
       style={{ aspectRatio: style.aspectRatio }}
     />
   );

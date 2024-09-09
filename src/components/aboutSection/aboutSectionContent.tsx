@@ -10,8 +10,10 @@ export default function AboutSectionContent({
   text,
 }: aboutSectionContentProps) {
   return (
-    <div className={`md:mt-2 md:w-4/5 text-center md:text-left`}>
-      <p className="text-center text-lg font-medium md:text-left">{text}</p>
+    <div className={`md:mt-2 md:w-full text-center md:text-left`}>
+      <p className="text-center text-lg md:text-xl font-medium md:text-left">
+        {text}
+      </p>
       <br />
     </div>
   );
