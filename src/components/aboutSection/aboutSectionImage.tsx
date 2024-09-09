@@ -1,3 +1,4 @@
+import { urlFor } from "@/app/lib/sanity";
 import SquareImage from "@/shared/components/squareImage";
 import React from "react";
 
@@ -12,7 +13,7 @@ export default function AboutSectionImage({
   return (
     <div className={`flex md:mt-2 w-full justify-center`}>
       <SquareImage
-        src={`/${src}`}
+        src={urlFor(src).url()}
         alt={alt}
         width={500}
         height={400}

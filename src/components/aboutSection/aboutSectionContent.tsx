@@ -11,7 +11,7 @@ export default function AboutSectionContent({
 }: aboutSectionContentProps) {
   return (
     <div className={`md:mt-2 md:w-full text-center md:text-left`}>
-      <p className="text-center text-lg md:text-xl font-medium md:text-left">
+      <p className="text-center text-lg md:text-2xl font-medium md:text-left">
         {text}
       </p>
       <br />

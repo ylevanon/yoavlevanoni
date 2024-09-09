@@ -5,7 +5,7 @@ import AboutSectionContent from "./aboutSectionContent";
 interface AboutItemProps {
   header: string;
   text: string;
-  src: string;
+  imageSrc: string;
   alt: string;
   leftImage: boolean;
 }
@@ -13,7 +13,7 @@ interface AboutItemProps {
 export default function AboutItem({
   header,
   text,
-  src,
+  imageSrc,
   alt,
   leftImage,
 }: AboutItemProps) {
@@ -21,23 +21,23 @@ export default function AboutItem({
     <div className="mt-8">
       <div className="flex flex-col space-y-10 items-center justify-center align-top md:space-x-10 md:space-y-2 md:p-4 md:flex-row md:text-left">
         {leftImage ? (
-          <h1 className="justify-start text-2xl font-bold mb-6 md:text-left">
+          <h1 className="justify-start text-3xl font-bold mb-6 md:text-left">
             {header}
           </h1>
         ) : (
-          <h1 className="text-2xl font-bold mb-6">{header}</h1>
+          <h1 className="text-3xl font-bold mb-6">{header}</h1>
         )}
       </div>
       <div className="flex flex-col space-y-10 items-center justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
         {leftImage ? (
           <>
-            <AboutSectionImage src={src} alt={alt} />
+            <AboutSectionImage src={imageSrc} alt={alt} />
             <AboutSectionContent header={header} text={text} />
           </>
         ) : (
           <>
             <AboutSectionContent header={header} text={text} />
-            <AboutSectionImage src={src} alt={alt} />
+            <AboutSectionImage src={imageSrc} alt={alt} />
           </>
         )}
       </div>

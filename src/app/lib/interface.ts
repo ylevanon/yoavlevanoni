@@ -21,3 +21,10 @@ export interface ProjectCard {
      project_link: Url;
      github_link:Url;
 }
+
+export interface AboutCard {
+    title: string;
+     smallDescription: string;
+     titleImage: any;
+     leftImage: boolean
+}
